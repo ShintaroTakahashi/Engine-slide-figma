@@ -269,6 +269,16 @@
     "@slidev/types" "0.36.5"
     js-yaml "^4.1.0"
 
+"@slidev/theme-bricks@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@slidev/theme-bricks/-/theme-bricks-0.0.2.tgz#4045f6a94a6232cd1b8f5ecdfc77e09f81d9d537"
+  integrity sha512-70mc2kdWuo6ZoMJiEdWScs8Ei4bRfoEGDibVQFiHqbdFd2oWmmCyfWOVwc2j6HAiECENXrsmKJfN8Tc0S4kxTQ==
+  dependencies:
+    "@slidev/types" "^0.22.1"
+    codemirror-theme-vars "^0.1.1"
+    prism-theme-vars "^0.2.2"
+    theme-vitesse "^0.1.12"
+
 "@slidev/theme-default@*":
   version "0.21.2"
   resolved "https://registry.yarnpkg.com/@slidev/theme-default/-/theme-default-0.21.2.tgz#28db9f074cd0b17d19ca6ccd1d4c75db7a24b026"
@@ -294,7 +304,7 @@
   resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.36.5.tgz#3b766945c1008dadd487a567bc0a9845a261f2b3"
   integrity sha512-8D1lJQKKjTWS6WIf5zVLVNbRnIboxwcBFjolWMFAiKzJekeK8zY2Po0Ky1KdNlPvaCqhUyDrRUFO/WFtbSfKMQ==
 
-"@slidev/types@^0.22.7":
+"@slidev/types@^0.22.1", "@slidev/types@^0.22.7":
   version "0.22.7"
   resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.22.7.tgz#abe1c81fedd5db1475428832f65253f95722a6d8"
   integrity sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==
