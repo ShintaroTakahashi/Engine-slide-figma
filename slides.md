@@ -1,27 +1,17 @@
 ---
-# try also 'default' to start simple
 theme: seriph
 themeConfig:
   primary: '#ffffff'
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-# background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
 class: "text-center"
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: true
-# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
 drawings:
   persist: false
-# use UnoCSS
 css: unocss
 ---
 
@@ -35,9 +25,6 @@ css: unocss
     text-align: right;
   }
 </style>
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
 
@@ -50,11 +37,6 @@ The last comment block of each slide will be treated as slide notes. It will be 
 - いつも窓際でパソコンカタカタしてます
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdyW_rzI6DfekDkZw_wPByHtisEueDZHAtSMXaP4fPBUDFcs8&s" />
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
 
 <style>
   img {
@@ -84,10 +66,8 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 # 出来る事
 
 1. storybook 上に Figma のデザインデータを表示させる
-   <br>**ここに画像とか貼る**
 
 2. Figma 上に storybook のコンポーネントを表示させる
-   <br>**ここに画像とか貼る**
 
 <style>
  ol {
@@ -103,18 +83,31 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 # 何が嬉しいのか
 
-- エンジニア以外も開発中の画面やコンポーネントを確認しやすい！
+<div>
+
+1. コンポーネントとデザインを紐づけやすい
+2. 開発中のコンポーネントをエンジニア以外に共有しやすい
+
 <br>
-<br>
-→ デザイナーやディレクターとFEの間のコミュニケーションコストが下がる！
+
+↓
+
+- デザイナーやディレクターとFEの間のコミュニケーションコストが下がる
+- コンポーネント駆動開発(CDD)がさらに捗る！！
+
+</div>
 
 <style>
-  ul {
+  ol {
     margin-top: 80px;
   }
   li {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 26px;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 26px;
+    margin-left: 100px;
   }
 </style>
 
@@ -122,7 +115,9 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 
 # storybook ってなんだっけ？
 
-## 概要(一般向け)
+<br>
+
+## 概要
 
 <br>
 
@@ -134,8 +129,6 @@ Visual Regression Test や Interaction Test にも利用できて**みんな幸�
 
 </p>
 
-**ここに画像を貼る**
-
 <style>
   p {
     font-size: 24px;
@@ -144,9 +137,13 @@ Visual Regression Test や Interaction Test にも利用できて**みんな幸�
 
 ---
 
-# storybook ってなんだっけ？(エンジニア向け)
+<iframe src="https://storybook.js.org/" width="100%" height="100%"></iframe>
 
-# これを
+---
+
+## これを
+
+<br>
 
 ```jsx
 // Button.jsx
@@ -176,7 +173,9 @@ export const Button = ({ children, onClick }) => (
 
 ---
 
-# こうすると
+## こうすると
+
+<br>
 
 ```jsx
 // Button.stories.js
@@ -202,19 +201,23 @@ export const Disabled = {
 
 ---
 
-# こうなります
+## こうなります
 
-![Buttonのstory](/images/button-story.png)
-
+<br>
+<img src="/public/images/button-story.png" alt=""/>
 
 ---
 
 # storybook 上に Figma のデザインデータを表示させる
 
-**ここに慣性系のイメージ画像**
+<style>
+  div{
+    display:grid;
+    place-items: center;
+  }
+</style>
 
 ---
-
 
 # storybook 上に Figma のデザインデータを表示させる
 
@@ -242,6 +245,7 @@ export const Disabled = {
 <br>
 
 ## 手順1 : storybookのaddonをinstallする
+
 <br>
 <br>
 
@@ -324,7 +328,7 @@ export const Disabled = {
 
 ## 手順4 : Figmaの共有リンクを紐づける
 
-**ここにfigmaの画像を貼る**
+<img src="/public/images/get-figma-link.png" alt="" />
 
 ---
 
@@ -365,9 +369,306 @@ export const Disabled: ButtonStory = {
 ## 手順5 : 良い感じになる！
 <br>
 
-**ここに画像を貼る**
+<img src="/public/images/figma-on-storybook.png" />
+
+---
+
+# 良いところ
+
+- 実装したコンポーネントとデザインを同じ画面で見れる
+<br>
+→ ブラウザの行ったり来たりが減る
+
+<br>
+
+- 埋め込みのFigma上に最終更新日時が出る
+<br>
+→ デザインの変更が追いやすい(ただしファイル単位で時間もざっくり)
+
+<style>
+  li {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+</style>
+
+---
+
+# 注意点
+
+- page直下のframe単位でしか表示できない(ネストされたframeは×)
+  <br>→ Figmaの仕様上page直下のframeしか固有のURLが生成されない
+
+<br>
+
+- Figmaファイルの閲覧権限が無い(inviteされていない)場合はstorybookからも見れない
+
+<div class="container">
+  <img src="/public/images/not-found-figma.png" />
+</div>
+
+<style>
+  .container {
+    margin-top: 20px;
+    margin-left: 50px;
+    width:500px;
+    height:300px;
+  }
+
+  li {
+    font-size: 24px;
+  }
+</style>
 
 ---
 
 # Figma 上に storybook のコンポーネントを表示させる
-**ここに完成形のイメージ画像**
+
+<style>
+    div{
+    display: grid;
+    place-items: center;
+  }
+</style>
+
+---
+
+# Figma 上に storybook のコンポーネントを表示させる
+
+- パターン1 : ChromaticとStorybook Connectを使用する
+- パターン2 : Gist pluginを使用する
+
+<style>
+  ul {
+    margin-top: 80px;
+  }
+  li {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+</style>
+
+---
+
+# Figma 上に storybook のコンポーネントを表示させる
+
+- パターン1 : ChromaticとStorybook Connectを使用する
+<br>
+<br>
+  Chromatic : storybook公式のホスティングサービス
+<br>
+  Storybook Connect : storybook公式のFigma plugin、まだ発展途上感。
+
+- パターン2 : Gist pluginを使用する
+
+<style>
+  ul {
+    margin-top: 80px;
+  }
+  li {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  li:not(:first-child) {
+    opacity: 0.3;
+  }
+</style>
+
+---
+
+# ChromaticとStorybook Connectを使用する
+
+<br>
+
+## 手順
+
+<br>
+
+1. storybookのChromaticにホストする
+2. Figma に Storybook Connect をインストールする
+3. ホストしているChromaticのURLを紐づける
+4. Figma上にコンポーネントが表示される
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+---
+
+# 個人的イケてないポイント
+- Chromaticにpublishでホストする必要がある
+- Chromaticの月額課金がかかる場合もある
+- storybookの機能を全て使える訳ではない
+
+<style>
+  li {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+</style>
+
+---
+
+# Figma 上に storybook のコンポーネントを表示させる
+
+- パターン1 : ChromaticとStorybook Connectを使用する
+- パターン2 : Gist pluginを使用する
+  <br>
+  Gist plugin : Figma上に外部ドキュメントを埋め込めるplugin
+
+<style>
+  ul {
+    margin-top: 80px;
+  }
+  li {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  li:first-child {
+    opacity: 0.3;
+  }
+</style>
+
+---
+
+# Gist pluginを使用する
+
+<br>
+
+## 手順
+
+<br>
+
+1. storybookをどこかにホストする
+2. Figma に Gist plugin をインストールする
+3. ホストしているstorybookのURLを紐づける
+4. Figma上にstorybookが表示される
+5. 良い感じ！
+
+<style>
+  li {
+    font-size: 30px;
+  }
+</style>
+
+---
+
+# Gist pluginを使用する
+
+<br>
+
+## 手順1 : storybookをどこかにホストする
+
+<br>
+<br>
+
+これはどこでも良いです。
+
+今回はGithub-pagesにしました。
+
+<style>
+  p{
+    font-size: 24px;
+  }
+</style>
+
+---
+
+# Gist pluginを使用する
+
+<br>
+
+## 手順2 : Figma に Gist plugin をインストールする
+
+<div class="container">
+  <img src="/public/images/gist-plugin.png" />
+</div>
+
+<style>
+  .container {
+    margin-top: 20px;
+  }
+</style>
+
+---
+
+# Gist pluginを使用する
+
+<br>
+
+## 手順3 : ホストしているstorybookのURLを紐づける
+
+<div class="container">
+  <img src="/public/images/gist-link-figma.png" />
+</div>
+
+<style>
+  .container {
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 350px;
+  }
+  img{
+    height: 100%;
+  }
+</style>
+
+---
+
+# Gist pluginを使用する
+
+<br>
+
+## 手順4 : Figma上にstorybookが表示される
+
+<div class="container">
+  <img src="/public/images/storybook-on-figma.png" />
+
+   良い感じ ( ﾉ ﾟｰﾟ)ﾉ
+
+</div>
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 350px;
+  }
+  p{
+    margin-left: 30px
+  }
+  img{
+    height: 100%;
+  }
+</style>
+
+---
+
+# 良いところ
+
+- Figma上で実際のコンポーネントも見れる
+<br>
+→ 非エンジニアが新しいツールをわざわざ覚えなくて良い
+
+<br>
+
+- storybookの機能も全て使える
+<br>
+→ ほとんどiframeで埋め込んでいるだけなので
+
+<br>
+
+- storybookのホスト先を縛られない
+<br>
+→ 認証もOK(のハズ)
+
+<style>
+  li {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+</style>
