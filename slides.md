@@ -204,7 +204,7 @@ export const Disabled = {
 ## こうなります
 
 <br>
-<img src="/public/images/button-story.png" alt=""/>
+<img src="/images/button-story.png" alt=""/>
 
 ---
 
@@ -328,7 +328,7 @@ export const Disabled = {
 
 ## 手順4 : Figmaの共有リンクを紐づける
 
-<img src="/public/images/get-figma-link.png" alt="" />
+<img src="/images/get-figma-link.png" alt="" />
 
 ---
 
@@ -369,7 +369,7 @@ export const Disabled: ButtonStory = {
 ## 手順5 : 良い感じになる！
 <br>
 
-<img src="/public/images/figma-on-storybook.png" />
+<img src="/images/figma-on-storybook.png" />
 
 ---
 
@@ -404,7 +404,7 @@ export const Disabled: ButtonStory = {
 - Figmaファイルの閲覧権限が無い(inviteされていない)場合はstorybookからも見れない
 
 <div class="container">
-  <img src="/public/images/not-found-figma.png" />
+  <img src="/images/not-found-figma.png" />
 </div>
 
 <style>
@@ -583,7 +583,7 @@ export const Disabled: ButtonStory = {
 ## 手順2 : Figma に Gist plugin をインストールする
 
 <div class="container">
-  <img src="/public/images/gist-plugin.png" />
+  <img src="/images/gist-plugin.png" />
 </div>
 
 <style>
@@ -601,7 +601,7 @@ export const Disabled: ButtonStory = {
 ## 手順3 : ホストしているstorybookのURLを紐づける
 
 <div class="container">
-  <img src="/public/images/gist-link-figma.png" />
+  <img src="/images/gist-link-figma.png" />
 </div>
 
 <style>
@@ -624,7 +624,7 @@ export const Disabled: ButtonStory = {
 ## 手順4 : Figma上にstorybookが表示される
 
 <div class="container">
-  <img src="/public/images/storybook-on-figma.png" />
+  <img src="/images/storybook-on-figma.png" />
 
    良い感じ ( ﾉ ﾟｰﾟ)ﾉ
 
