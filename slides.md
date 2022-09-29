@@ -63,56 +63,6 @@ css: unocss
 
 ---
 
-# 出来る事
-
-1. storybook 上に Figma のデザインデータを表示させる
-
-2. Figma 上に storybook のコンポーネントを表示させる
-
-<style>
- ol {
-    margin-top: 80px;
-  }
-  li {
-    font-size: 24px;
-    margin-top: 50px;
-  }
-</style>
-
----
-
-# 何が嬉しいのか
-
-<div>
-
-1. コンポーネントとデザインを紐づけやすい
-2. 開発中のコンポーネントをエンジニア以外に共有しやすい
-
-<br>
-
-↓
-
-- デザイナーやディレクターとFEの間のコミュニケーションコストが下がる
-- コンポーネント駆動開発(CDD)がさらに捗る！！
-
-</div>
-
-<style>
-  ol {
-    margin-top: 80px;
-  }
-  li {
-    font-size: 26px;
-    margin-top: 30px;
-  }
-  p {
-    font-size: 26px;
-    margin-left: 100px;
-  }
-</style>
-
----
-
 # storybook ってなんだっけ？
 
 <br>
@@ -205,6 +155,56 @@ export const Disabled = {
 
 <br>
 <img src="/images/button-story.png" alt=""/>
+
+---
+
+# 出来る事
+
+1. storybook 上に Figma のデザインデータを表示させる
+
+2. Figma 上に storybook のコンポーネントを表示させる
+
+<style>
+ ol {
+    margin-top: 80px;
+  }
+  li {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+</style>
+
+---
+
+# 何が嬉しいのか
+
+<div>
+
+1. コンポーネントとデザインを紐づけやすい
+2. 開発中のコンポーネントをエンジニア以外に共有しやすい
+
+<br>
+
+↓
+
+- デザイナーやディレクターとFEの間のコミュニケーションコストが下がる
+- コンポーネント駆動開発(CDD)がさらに捗る！！
+
+</div>
+
+<style>
+  ol {
+    margin-top: 80px;
+  }
+  li {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 26px;
+    margin-left: 100px;
+  }
+</style>
 
 ---
 
