@@ -484,7 +484,7 @@ export const Disabled: ButtonStory = {
 
 <br>
 
-1. storybookのChromaticにホストする
+1. storybookをChromaticにホストする
 2. Figma に Storybook Connect をインストールする
 3. ホストしているChromaticのURLを紐づける
 4. Figma上にコンポーネントが表示される
@@ -498,8 +498,8 @@ export const Disabled: ButtonStory = {
 ---
 
 # 個人的イケてないポイント
-- Chromaticにpublishでホストする必要がある
-- Chromaticの月額課金がかかる場合もある
+- ホスト先がChromaticに縛られる
+  - Chromaticの月額課金がかかる場合もある
 - storybookの機能を全て使える訳ではない
 
 <style>
